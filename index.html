@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+    <title>Responsive Re-design: Bagel Gourmet Café</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="my assignment write up">
+</head>
+    <body>
+        <div class = "block1"> 
+            <div class = "tldr">
+                <h1>tldr;</h1>
+                <p id="introtext"> As a bagel fanatic, I chose to re-design the Bagel Gourmet Café website with a focus on increasing
+                    the usability, learnability, and memorability. Table of contents:
+                    <ul id = "toc">
+                        <li><a class = "tocl" href="http://bagelgourmetcafe.com/ ">Original Website </a></li>
+                        <li><a class = "tocl" href="https://sadsloth023.github.io/BGC/ ">Re-designed Website </a></li>
+                        <li><a class = "tocl" href="#part0">Overview</a></li>
+                        <li><a class = "tocl" href="#part1">Part 1</a>
+                            <ul>
+                                <li> <a class = "tocl" href="#analysis">Finding Problems </a></li>
+                                <li> <a class = "tocl" href="#WAIVE">Accessibility </a></li>
+                            </ul>
+                        </li>
+                        <li> <a class = "tocl" href="#part2">Part 2</a>
+                            <ul>
+                                <li> <a class = "tocl" href="#lowfi">Lowfi Prototype </a></li>
+                                <li> <a class = "tocl" href="#vdg"> Visual Design Guide </a></li>
+                                <li> <a class = "tocl" href="#highfi">Highfi Prototype</a></li>
+                            </ul>
+                        </li>
+                        <li><a class = "tocl" href="#part3">Part 3</a></li>
+                        <li><a class = "tocl" href="#concl">Conclusion</a></li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class = "block2"> 
+            <div id = "part0"> 
+                <h1>Page Overview</h1>
+                <p> Ever looked at a website and thoughts to yourself <em>what is going on?</em></i> Whether it be cluttered text,
+                    disorganized hierachy, there are many aspects of a website's design that can hinder it's usability. This project
+                    focused on re-designing Bagel Gourmet's website to make it more user friendly. More specifically, the website was
+                    re-designed to be more usable, learnable, and memorable. 
+                </p>
+            </div>
+            <div id = "part1" class = "part1"><h1>Part 1: Identifying Usability Problems</h1></div>
+                <div id="analysis">
+                    <h2>Findng Problems</h2>
+                    <p>Before re-designing the Bagel Gourmet Café website, I did an analysis of how the current website could be improved. Here is a screenshot of the current website:</p>
+                        <img id="oldweb" src="./assets/annotedweb.png">
+                        <p>Here are problems I identified when using the website categorized by usability, learnability, and memorability:</p>
+                        <div class = "webblock">
+                            <h3>Usability</h3>
+                            <ul>
+                                <li>Users might expect hyperlinks to be underlined text, but the underlined text doesn’t hyperlink to anything in (4)</li>
+                                <li>There are 2 navigation bars [(2) and (6)], however, (6) has no utility since it’s the same exact thing as 2 and is not visible. (6) could perhaps be made more visible by changing the color of the bottom of the webpage. </li>
+                                <li>There’s a lack of clear hierarchy. For example:
+                                    <ul>
+                                        <li>In (1) the logo is next to subtext which hinders the BGC logo from standing out. </li>
+                                        <li>The navigation bar is only spans the right side of the page (why not have it extend the entire page instead)</li>
+                                        <li>People usually read left to right and top to bottom. Thus, the hours and contact information on the left might be the first thing a user reads. However, a user should be given an introduction to what Bagel Gourmet Café is before reading what their hours are.</li>
+                                        <li>Photos in 5 are randomly scattered without clear layout or hierarchy </li>
+                                    </ul>
+                                </li>
+                                <li>There’s a lot of blank, unused space. The right side (4 and 5) extend past the left side, creating unused, blank space on the bottom left.</li>
+                                <li>The background is quite dark, which can make the text on the bottom hard to read (6)</li>
+                            </ul>
+                            <h3>Learnability</h3>
+                            <ul>
+                                <li>Text coloring has no impactful meaning; for example in (3) the coloring is quite random and in the main body of text (hours are in blue, random works are in red) which can confuse users. This makes it hard for a user to associate types of text with a color, making the website less learnable. Perhaps all headers should be red and all subtext should be black. 
+                                </li>
+                                <li>Font use:
+                                    <ul>
+                                        <li>Bolding: all of the text is bolded, when bolding should be used selectively to highlight key messaging.</li>
+                                        <li>Underline: Underlining should be reserved for hyperlinks (given that users are used to this formatting and everything in the nav bar (2) is underlined). However, “Medical Alpert Brown School” is underlined. </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h3>Memorability</h3>
+                            <ul>
+                                <li>Lack of a simple logo (1) makes the website (and brand) less memorable</li>
+                                <li>Inconsistent branding and messaging  can confuse the user and make the website forgettable; if this is a bagel store, why are there photos of pizza (5)? According to the menu, they do not sell pizza</li>
+                                <li>There are at least 4 different fonts on this page, making it less memorable (inconsistent branding) </li>
+                            </ul>
+                    </div>
+                </div>
+                <!--
+                    finish this section on accessibility
+                -->
+                <div id="WAIVE">
+                    <h2>Accessibility </h2>
+                    <p>In addition to analyzing the website on my own, I used WebAIM Wave to identify accessibility issues. The website indicated that there were 12 contrast errors,
+                        20 alerts (for things including but not limited to underlined text, very small text, missing headings), missing/uninformative page title, and more. I agreed with almost all 
+                        of the results indicated. Underlined text should be reserved for hyperlinks as to not confuse users, the text size varied quite a bit throughout the webpage
+                        and was quite small in some areas. Moreover, there was a lack of hierachy caused by the lack of headers and layout problems. However, the biggest issue with accessibility
+                        in my opinion is the last of contrast issue. The background color of the website was a dark maroon gradient, which didn't contrast well with the text. This can especially be 
+                        seen in the bottom navigation menu as well as on the left hand text panel.
+
+                    </p>
+
+                </div>
+            <div id = "part2" class = "part2"><h1>Part 2: Visual Redesign</h1></div>
+                <h2 id="lowfi">Lowfi Prototypes</h2>
+                <div><img id="lowdesk" src="./assets/lowdesk.png"></div> 
+                <div><img id="lowmobtab" src="./assets/lowmobtab.png"></div> 
+                <div>
+                    <p> Above are 3 lowfi prototypes of a re-designed bagel gourmet website that adress the usability issues outlined
+                        above. More specifically:
+                        <ul id="lowfidesc">
+                            <li><b>Usability:</b> There is a clear hierachy of materials; each section is clearly marked and does not overlap with each other. Moreover, underlining 
+                                is strictly reserved for hyperlinked text. Although not reflected in the lowfi prototype, the background will be a lighter color.
+                            </li>
+                            <li><b>Learnability:</b> Although not reflected in the lowfi prototype, changing the color of text will be used selectively and all text of the same hierarchy (headings, 
+                                body text, etc.) will be the same color and font size. Bolding and underlining will also be used selectively.  </li>
+                            <li><b>Memorability:</b> There will be better branding of BCG. The website will be in one font. </li>
+                        </ul>
+                    </p>
+                </div>
+                <h2 id="vdg">Visual Design Style Guide</h2>
+                <p> The below is a visual design guide used to create highfi prototypes. However, because of the simplicity of the website, there 
+                    are relatively few elements here:
+                </p>
+                <div class="highfi"> <img class = "visualguide" src="./assets/style guide.png"></div>
+                <h2 id="highfi">Highfi Prototypes</h2>
+                <h3>Desktop</h3>
+                <p>Here is a high-fi prototype for desktop users: </p>
+                <div class="highfi"><img id = "hidesk" src="./assets/hi-desktop.png"></div>
+                <h3> Tablet</h3>
+                <p>The tablet web layout should be identical to that of the desktop. This is because the elements of the website
+                    are relatively simple and spaced out, thus, the change in dimension should not affect the usability. Moreover,
+                    all of the font sizes will be in relative as opposed to absolute units, so it will resize based on screen size. 
+                </p>
+                <div class = "highfi"> <img id = "hitablet" src="./assets/hi-tablet.png"> </div>
+                <h3>Mobile</h3>
+                <p>Although many of the elements of the mobile version of this website are the same as the desktop, the biggest differences are with the
+                    grid layout and navigation bar. Instead of having a 2 column grid, everything will be laid out in a 1 column grid given how narrow
+                    a mobile phone is. Moreover, the nav bar will collapse into a hamburger menu again because of width restrictions on a phone. Because all
+                    elements of the website should be sized with relative units (either rem or percentages), these will also remain consistent
+                    across the desktop and mobile. Here is a high-fi mobile prototype:
+                </p>
+                <div class = "highfi"> <img id = "hiphone" src="./assets/hi-phone.png"> </div>
+
+            <div id = "part3" class = "part3"><h1>Part 3: Responsive Redesign</h1></div>
+            <a href="https://sadsloth023.github.io/BGC/">Here</a> is a link to the redeisnged website! It should look like this: 
+            <img id = "websitescreen" src="./assets/website-screen.png">
+            <br>
+            <div id = "concl" class = "concl"><h1>Conclusion</h1></div>
+            <p>Completing this project taught me a lot about how to most effectively design a website! As an avid lover of bagels, I had previously
+                not realized how ineffective the previous website was. However, through this process I was able to learn about how to reoganize the hierachy
+                of a website to be most user friendly, how to leverage color and font style to organize a webpage, and how to empathize with users. Moreover, I 
+                also learned how important prototypes are for creating a webpage, as creating lowfi and highfi prototypes streamlined the process of coding
+                the new Bagel Gourmet Café website. 
+            </p>
+
+        </div>
+    </body>
+</html>
